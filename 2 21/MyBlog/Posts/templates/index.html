@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{{ title }}
+
+{% block content_1 %}
+<h1>Main Page</h1>
+
+<a href="{% url 'Posts:all_posts' %}">Все посты</a>
+<a href="{% url 'Posts:create_post' %}">Создать пост</a>
+
+{% endblock %}
+

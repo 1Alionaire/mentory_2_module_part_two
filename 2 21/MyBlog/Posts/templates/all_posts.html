@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{{ title }}
+
+{% block content_1 %}
+{% for post in posts %}
+<h1>{{post.title }}</h1>
+<td><a href="info/{{post.id}}">Подробнее</a>
+{% endfor %}
+
+{% endblock %}
+
+
+
+

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+
+{% block content %}
+<form action = "#" method = "post">
+    <p>Введи данные:</p>
+    <p><input type = "text" name="in_str"/></p>
+    <p><input type = "Submit" value="submit"/></p>
+</form>
+    {% endblock %}
+
+<h1>{{ error }}</h1>

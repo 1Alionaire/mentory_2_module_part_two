@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{{ title }}
+
+{% block content_1 %}
+
+<form action = "{% url 'Posts:create_post' %}" method="post">
+    {% csrf_token %}
+       <label for="{{form.title.id_for_label}}">
+          Заголовок
+       </label>
+   <br>
+       {{form.title}}
+   <br>
+      <br>
+       <label for="{{form.content.id_for_label}}">
+          Текст блога
+       </label>
+   <br>
+       {{form.content}}
+   <br>
+   <br>
+       <input type="submit" value="Отправить запись">
+
+</form>
+
+{% endblock %}
+
